@@ -1,0 +1,36 @@
+/* Part 3: Toggle buttons & expanded sections */
+.toggle-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 0.5rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.steps-container, .ingredients-container {
+  display: none;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.steps-container.visible, .ingredients-container.visible {
+  display: block;
+}
+
+.steps-list { padding-left: 1.5rem; }
+.step { margin: 0.5rem 0; }
+.substep { 
+  margin-left: 2rem; 
+  font-style: italic; 
+  color: #666;
+  list-style-type: "➤ ";
+}
